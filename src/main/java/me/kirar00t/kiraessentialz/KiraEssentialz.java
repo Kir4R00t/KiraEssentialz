@@ -6,16 +6,10 @@ import me.kirar00t.kiraessentialz.commands.Home;
 import me.kirar00t.kiraessentialz.commands.Sethome;
 
 // bukkit imports
-import org.bukkit.Location;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
 
 public final class KiraEssentialz extends JavaPlugin implements Listener {
     @Override
