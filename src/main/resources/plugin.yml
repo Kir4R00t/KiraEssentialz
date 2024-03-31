@@ -1,0 +1,7 @@
+name: KiraEssentialz
+version: '${project.version}'
+main: me.kirar00t.kiraessentialz.KiraEssentialz
+api-version: '1.20'
+authors: [KiraR00t]
+description: My first plugin with many QOL features
+website: https://www.kirar00t.site/
