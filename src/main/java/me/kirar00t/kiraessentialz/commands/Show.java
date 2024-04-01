@@ -35,6 +35,7 @@ public final class Show implements CommandExecutor {
             }
 
             String enchats = labelBuilder.toString();
+            // If item has no custom name it will not be seen in chat FIX!!!
             ChatHoverLabel.sendHoverMessage(player, item.getItemMeta().getDisplayName(), enchats);
         } else {
             player.sendMessage(ChatColor.RED + "This item has no enchants");

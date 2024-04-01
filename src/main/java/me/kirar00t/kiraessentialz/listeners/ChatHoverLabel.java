@@ -22,6 +22,8 @@ public final class ChatHoverLabel implements Listener {
         TextComponent component = new TextComponent(message);
         component.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(label).create()));
 
+        // player.spigot().sendMessage(ChatMessageType.CHAT, component);
+        // I guess the one below is working ? :v
         Bukkit.spigot().broadcast(component);
     }
 }
