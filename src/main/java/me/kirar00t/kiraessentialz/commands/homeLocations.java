@@ -9,5 +9,6 @@ import java.util.UUID;
 import org.bukkit.Location;
 
 public class homeLocations {
+    // HashMap to store player's home locations
     public static Map<UUID, Location> homeLocations = new HashMap<>();
 }

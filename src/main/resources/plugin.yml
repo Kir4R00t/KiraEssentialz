@@ -15,3 +15,6 @@ commands:
   Clearhome:
     description: Clear current home location
     usage: /<command>
+  Show:
+    description: Show off your cool enchanted item
+    usage: /<command>
