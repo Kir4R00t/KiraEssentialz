@@ -36,8 +36,9 @@ public final class Show implements CommandExecutor {
             }
 
             String enchats = labelBuilder.toString();
-            // If item has no custom name it will not be seen in chat FIX!!!
             String item_name = item.getItemMeta().getDisplayName();
+
+            // If item has no custom name --> get material type as name
             if (item_name.isEmpty()) {
                 Material material = item.getType();
                 item_name = material.toString();
