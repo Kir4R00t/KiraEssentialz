@@ -3,6 +3,7 @@ package me.kirar00t.kiraessentialz.commands;
 // bukkit imports
 import me.kirar00t.kiraessentialz.listeners.ChatHoverLabel;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -36,7 +37,14 @@ public final class Show implements CommandExecutor {
 
             String enchats = labelBuilder.toString();
             // If item has no custom name it will not be seen in chat FIX!!!
-            ChatHoverLabel.sendHoverMessage(player, item.getItemMeta().getDisplayName(), enchats);
+            String item_name = item.getItemMeta().getDisplayName();
+            if (item_name.isEmpty()) {
+                Material material = item.getType();
+                item_name = material.toString();
+                System.out.println("item name is - " + item_name);
+            }
+            ChatHoverLabel.sendHoverMessage(player, item_name , enchats);
+
         } else {
             player.sendMessage(ChatColor.RED + "This item has no enchants");
 
