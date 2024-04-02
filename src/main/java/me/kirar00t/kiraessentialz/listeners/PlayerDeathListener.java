@@ -1,7 +1,7 @@
 package me.kirar00t.kiraessentialz.listeners;
 
 // inside imports
-import me.kirar00t.kiraessentialz.deathLocations;
+import me.kirar00t.kiraessentialz.locations.deathLocations;
 
 // bukkit imports
 import org.bukkit.event.EventHandler;

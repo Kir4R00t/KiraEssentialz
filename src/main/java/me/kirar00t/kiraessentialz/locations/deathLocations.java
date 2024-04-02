@@ -1,7 +1,6 @@
-package me.kirar00t.kiraessentialz;
+package me.kirar00t.kiraessentialz.locations;
 
-import org.bukkit.Location;
-
+// Java imports
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;

@@ -1,6 +1,7 @@
 package me.kirar00t.kiraessentialz.commands;
 
 // bukkit imports
+import me.kirar00t.kiraessentialz.locations.homeLocations;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

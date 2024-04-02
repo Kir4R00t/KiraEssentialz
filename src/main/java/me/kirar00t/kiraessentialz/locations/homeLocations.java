@@ -1,4 +1,4 @@
-package me.kirar00t.kiraessentialz.commands;
+package me.kirar00t.kiraessentialz.locations;
 
 // java stuff imports
 import java.util.HashMap;
