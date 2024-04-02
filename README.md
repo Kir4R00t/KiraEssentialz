@@ -5,4 +5,5 @@
 - To make it work just download the plugin.jar file (download link above) and put it in your ~/plugins folder
 ## Features:
 - **/show** --> allows you to show off your cool enchanted sword to everyone without having to give it to anyone
-- **/sethome** --> allows you to set your "home" to which you can teleport at any moment (/home to tp & /clearhome to clear saved location)
+- **/sethome** --> set your "home" to which you can teleport at any moment (/home to tp & /clearhome to clear saved location)
+- **/lastdeath** --> check coordinates of your last death

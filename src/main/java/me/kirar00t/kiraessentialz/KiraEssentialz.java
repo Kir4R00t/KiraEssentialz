@@ -1,13 +1,11 @@
 package me.kirar00t.kiraessentialz;
 
 // Inside imports
-import me.kirar00t.kiraessentialz.commands.ClearHome;
-import me.kirar00t.kiraessentialz.commands.Home;
-import me.kirar00t.kiraessentialz.commands.Sethome;
+import me.kirar00t.kiraessentialz.commands.*;
 
 // bukkit imports
-import me.kirar00t.kiraessentialz.commands.Show;
 import me.kirar00t.kiraessentialz.listeners.ChatHoverLabel;
+import me.kirar00t.kiraessentialz.listeners.PlayerDeathListener;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -23,9 +21,11 @@ public final class KiraEssentialz extends JavaPlugin implements Listener {
         Objects.requireNonNull(getCommand("home")).setExecutor(new Home());
         Objects.requireNonNull(getCommand("clearhome")).setExecutor(new ClearHome());
         Objects.requireNonNull(getCommand("show")).setExecutor(new Show());
+        Objects.requireNonNull(getCommand("lastdeath")).setExecutor(new Lastdeath());
 
         // Register listeners
         getServer().getPluginManager().registerEvents(new ChatHoverLabel(), this);
+        getServer().getPluginManager().registerEvents(new PlayerDeathListener(), this);
 
         System.out.println("KiraEssentialz plugin successfully loaded !");
     }

@@ -18,3 +18,6 @@ commands:
   Show:
     description: Show off your cool enchanted item
     usage: /<command>
+  Lastdeath:
+    description: Get coordinates of your last death place
+    usage: /<command>
