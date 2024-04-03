@@ -7,3 +7,4 @@
 - **/show** --> allows you to show off your cool enchanted sword to everyone without having to give it to anyone
 - **/sethome** --> set your "home" to which you can teleport at any moment (/home to tp & /clearhome to clear saved location)
 - **/lastdeath** --> check coordinates of your last death
+- **/echest** --> open your enderchest from anywhere

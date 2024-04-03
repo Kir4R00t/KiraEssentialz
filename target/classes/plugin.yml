@@ -21,3 +21,6 @@ commands:
   Lastdeath:
     description: Get coordinates of your last death place
     usage: /<command>
+  Echest:
+    description: Open your enderchest from any place
+    usage: /<command>
