@@ -1,17 +1,16 @@
 package me.kirar00t.kiraessentialz.commands;
 
+// inside imports
 import me.kirar00t.kiraessentialz.locations.tpRequest;
+
+// bukkit imports
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.Location;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
 
 public class TPA implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -30,9 +29,10 @@ public class TPA implements CommandExecutor {
                 // send teleport request to the target player
                 tpRequest.tpRequest.put(target.getUniqueId(), rqstSender.getUniqueId());
 
+                // TODO: wait 10 seconds for acceptance and then drop the request
                 rqstSender.sendMessage(ChatColor.BLUE + "TPA request has been sent");
                 target.sendMessage(ChatColor.BLUE + "Player " + rqstSender.getName() + " want to teleport to you !");
-                target.sendMessage(ChatColor.GREEN + "To accept use /tpaccept" + ChatColor.GRAY + "(request will expire in 10 seconds)");
+                target.sendMessage(ChatColor.GREEN + " To accept use /tpaccept");
 
                 return true;
             }
