@@ -8,6 +8,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Objects;
 import java.util.UUID;
 
 public class TPAccept implements CommandExecutor {
@@ -19,7 +20,7 @@ public class TPAccept implements CommandExecutor {
                 // rqstSenderUUID = commandsedner.getUniqueID
                 UUID rqstSenderUUID = tpRequest.tpRequest.get(player.getUniqueId());
                 Player rqstSender = Bukkit.getPlayer(rqstSenderUUID);
-                player.teleport(rqstSender.getLocation());
+                Objects.requireNonNull(rqstSender).teleport(player.getLocation());
                 player.sendMessage(ChatColor.GREEN + "Teleported successfully !");
 
                 // remove request
