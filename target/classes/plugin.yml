@@ -24,3 +24,9 @@ commands:
   Echest:
     description: Open your enderchest from any place
     usage: /<command>
+  TPA:
+    description: Send a teleport request to any player
+    usage: /<command> <player>
+  TPAccept:
+    description: Accept pending player request
+    usage: /<command>

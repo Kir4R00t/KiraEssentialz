@@ -23,7 +23,8 @@ public final class KiraEssentialz extends JavaPlugin implements Listener {
         Objects.requireNonNull(getCommand("show")).setExecutor(new Show());
         Objects.requireNonNull(getCommand("lastdeath")).setExecutor(new Lastdeath());
         Objects.requireNonNull(getCommand("echest")).setExecutor(new Echest());
-
+        Objects.requireNonNull(getCommand("tpa")).setExecutor(new TPA());
+        Objects.requireNonNull(getCommand("tpaccept")).setExecutor(new TPAccept());
 
         // Register listeners
         getServer().getPluginManager().registerEvents(new ChatHoverLabel(), this);
