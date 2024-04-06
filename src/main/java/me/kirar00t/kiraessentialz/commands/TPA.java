@@ -1,7 +1,7 @@
 package me.kirar00t.kiraessentialz.commands;
 
 // inside imports
-import me.kirar00t.kiraessentialz.locations.tpRequest;
+import me.kirar00t.kiraessentialz.misc.tpRequest;
 
 // bukkit imports
 import org.bukkit.Bukkit;

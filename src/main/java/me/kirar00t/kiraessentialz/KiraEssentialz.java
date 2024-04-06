@@ -5,6 +5,7 @@ import me.kirar00t.kiraessentialz.commands.*;
 
 // bukkit imports
 import me.kirar00t.kiraessentialz.listeners.ChatHoverLabel;
+import me.kirar00t.kiraessentialz.listeners.InvOpenListener;
 import me.kirar00t.kiraessentialz.listeners.PlayerDeathListener;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -25,10 +26,12 @@ public final class KiraEssentialz extends JavaPlugin implements Listener {
         Objects.requireNonNull(getCommand("echest")).setExecutor(new Echest());
         Objects.requireNonNull(getCommand("tpa")).setExecutor(new TPA());
         Objects.requireNonNull(getCommand("tpaccept")).setExecutor(new TPAccept());
+        Objects.requireNonNull(getCommand("OpMenu")).setExecutor(new OpMenu());
 
         // Register listeners
         getServer().getPluginManager().registerEvents(new ChatHoverLabel(), this);
         getServer().getPluginManager().registerEvents(new PlayerDeathListener(), this);
+        getServer().getPluginManager().registerEvents(new InvOpenListener(), this);
 
         System.out.println("KiraEssentialz plugin successfully loaded !");
     }

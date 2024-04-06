@@ -30,3 +30,6 @@ commands:
   TPAccept:
     description: Accept pending player request
     usage: /<command>
+  OpMenu:
+    description: Access menu for operators
+    usage: /<command>
