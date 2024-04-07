@@ -1,21 +1,58 @@
 package me.kirar00t.kiraessentialz.menus;
 
+// bukkit imports
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+// java imports
+import java.util.Arrays;
 
 
 public class open_opMenu {
+    private static ItemStack createOption(Material material, String displayName, String... lore) {
+        ItemStack option = new ItemStack(material);
+        ItemMeta meta = option.getItemMeta();
+
+        meta.setDisplayName(displayName);
+
+        // lore == item label menu
+        if (lore != null && lore.length > 0) {
+            meta.setLore(Arrays.asList(lore));
+        }
+
+        option.setItemMeta(meta);
+        return option;
+    }
+
     public static void open_opMenu(Player player) {
-        Inventory inv = Bukkit.createInventory(null, 9, "Op Menu");
+        // One row == 9
+        Inventory inv = Bukkit.createInventory(null, 54, "Op Panel");
 
-        ItemStack option1 = new ItemStack(Material.DIAMOND_SWORD);
-        inv.setItem(0, option1);
+        // "frame" item
+        ItemStack frame = createOption(Material.BLACK_STAINED_GLASS_PANE, "", "");
 
-        ItemStack option2 = new ItemStack(Material.GOLDEN_APPLE);
-        inv.setItem(1, option2);
+        ItemStack option1 = createOption(Material.GOLDEN_APPLE, ChatColor.BLUE + "Option 1", ChatColor.DARK_PURPLE + "This is the first option.");
+        ItemStack option2 = createOption(Material.GOLDEN_APPLE, ChatColor.BLUE + "Option 2", ChatColor.DARK_PURPLE + "This is the second option.");
+
+        ItemStack exit = createOption(Material.BARRIER, ChatColor.RED + "Exit", ChatColor.RED + "Quit operator panel");
+
+        // Put everything into the "menu"
+
+        // This is making a "frame"
+        for (int i = 0; i <= 8; i++) { inv.setItem(i, frame); }
+        for (int i = 45; i <= 53; i++) { inv.setItem(i, frame); }
+        for (int i = 0; i <= 45; i+=9) { inv.setItem(i, frame); }
+        for (int i = 8; i <= 53; i+=9) { inv.setItem(i, frame); }
+
+        // Here are all the options in the panel
+        inv.setItem(21, option1);
+        inv.setItem(23, option2);
+        inv.setItem(43, exit);
 
         player.openInventory(inv);
     }
