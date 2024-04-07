@@ -9,3 +9,4 @@
 - **/lastdeath** --> check coordinates of your last death
 - **/echest** --> open your enderchest from anywhere
 - **/tpa** --> sends a teleport request to given player (*/tpaccept* to confirm it)
+- **/opmenu** --> special menu for server operators
