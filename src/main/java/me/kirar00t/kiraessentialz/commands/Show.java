@@ -1,6 +1,7 @@
 package me.kirar00t.kiraessentialz.commands;
 
 // bukkit imports
+
 import me.kirar00t.kiraessentialz.listeners.ChatHoverLabel;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -11,10 +12,10 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+// Java imports
 import java.util.Objects;
 
 
-@SuppressWarnings("NullableProblems")
 public final class Show implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = (Player) sender;
@@ -27,7 +28,7 @@ public final class Show implements CommandExecutor {
         }
 
         if (item.hasItemMeta() && Objects.requireNonNull(item.getItemMeta()).hasEnchants()) {
-            // Init String Builder to fill up label with enchants
+            // String Builder to fill up label with enchants
             StringBuilder labelBuilder = new StringBuilder();
             labelBuilder.append("\n");
             for (Enchantment enchantment : item.getEnchantments().keySet()) {
@@ -44,12 +45,12 @@ public final class Show implements CommandExecutor {
                 item_name = material.toString();
                 System.out.println("item name is - " + item_name);
             }
-            ChatHoverLabel.sendHoverMessage(player, item_name , enchats);
+            ChatHoverLabel.sendHoverMessage(player, item_name, enchats);
+            return true;
 
         } else {
             player.sendMessage(ChatColor.RED + "This item has no enchants");
-
         }
-        return true;
+        return false;
     }
 }

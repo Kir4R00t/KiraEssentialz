@@ -12,7 +12,6 @@ public class ClearHome implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = (Player) sender;
 
-        // clear home location
         if (command.getName().equalsIgnoreCase("clearhome")) {
             if (homeLocations.homeLocations.remove(player.getUniqueId()) != null) {
                 player.sendMessage(ChatColor.BLUE + "Home has been cleared");

@@ -1,5 +1,6 @@
 package me.kirar00t.kiraessentialz.commands;
 
+// bukkit imports
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -11,11 +12,13 @@ public class Echest implements CommandExecutor {
         Player player = (Player) sender;
 
         if (command.getName().equalsIgnoreCase("echest")) {
+            // it's surprisingly easy :v
             player.openInventory(player.getEnderChest());
             player.sendMessage(ChatColor.DARK_PURPLE + "Enderchest opened !");
             return true;
+        } else {
+            player.sendMessage(ChatColor.RED + "Something went wrong !");
+            return false;
         }
-
-        return false;
     }
 }

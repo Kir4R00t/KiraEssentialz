@@ -7,7 +7,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 // label imports
-import net.md_5.bungee.api.ChatMessageType;
+// import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -22,8 +22,7 @@ public final class ChatHoverLabel implements Listener {
         TextComponent component = new TextComponent(message);
         component.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(label).create()));
 
-        // player.spigot().sendMessage(ChatMessageType.CHAT, component);
-        // I guess the one below is working ? :v
+        // player.spigot().sendMessage(ChatMessageType.CHAT, component); <-- this if you want to send message only to player
         Bukkit.spigot().broadcast(component);
     }
 }

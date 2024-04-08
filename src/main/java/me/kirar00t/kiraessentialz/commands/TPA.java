@@ -21,10 +21,10 @@ public class TPA implements CommandExecutor {
         if (command.getName().equalsIgnoreCase("tpa")) {
             if(target == null) {
                 rqstSender.sendMessage(ChatColor.RED + "Your target player is not online");
-                return false;
+                return true;
             } else if (rqstSender == target) {
                 rqstSender.sendMessage(ChatColor.RED + "You cannot teleport to yourself dumbass");
-                return false;
+                return true;
             } else {
                 // send teleport request to the target player
                 tpRequest.tpRequest.put(target.getUniqueId(), rqstSender.getUniqueId());

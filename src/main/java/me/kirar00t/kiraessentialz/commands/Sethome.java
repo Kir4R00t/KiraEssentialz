@@ -9,6 +9,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public final class Sethome implements CommandExecutor {
+    // The issue with this is the fact that when the server restarts
+    // all home locations are gone.
+    // Make a file with all home locations
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = (Player) sender;
 

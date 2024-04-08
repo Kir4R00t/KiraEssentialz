@@ -9,8 +9,9 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-// java imports
+// Java imports
 import java.util.Arrays;
+import java.util.Objects;
 
 
 public class open_opMenu {
@@ -18,7 +19,7 @@ public class open_opMenu {
         ItemStack option = new ItemStack(material);
         ItemMeta meta = option.getItemMeta();
 
-        meta.setDisplayName(displayName);
+        Objects.requireNonNull(meta).setDisplayName(displayName);
 
         // lore == item label menu
         if (lore != null && lore.length > 0) {

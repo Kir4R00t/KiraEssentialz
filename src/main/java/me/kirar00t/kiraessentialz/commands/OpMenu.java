@@ -1,6 +1,9 @@
 package me.kirar00t.kiraessentialz.commands;
 
+// inside imports
 import me.kirar00t.kiraessentialz.menus.open_opMenu;
+
+// bukkit imports
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

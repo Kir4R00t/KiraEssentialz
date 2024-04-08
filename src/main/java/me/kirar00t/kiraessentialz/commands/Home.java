@@ -13,7 +13,6 @@ public class Home implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = (Player) sender;
 
-        // warp player to home
         if (command.getName().equalsIgnoreCase("home")) {
             Location homeLocation = homeLocations.homeLocations.get(player.getUniqueId());
             if (homeLocation != null) {
