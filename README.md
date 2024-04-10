@@ -10,3 +10,5 @@
 - **/echest** --> open your enderchest from anywhere
 - **/tpa** --> sends a teleport request to given player (*/tpaccept* to confirm it)
 - **/opmenu** --> special menu for server operators
+- **/disablePlugin** --> disable any other loaded plugin
+- **/enablePlugin** --> enable any other loaded plugin
