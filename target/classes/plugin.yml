@@ -33,3 +33,9 @@ commands:
   OpMenu:
     description: Access menu for operators
     usage: /<command>
+  DisablePlugin:
+    description: Disable any server plugin
+    usage: /<command> <pluginName>
+  EnablePlugin:
+    description: Enable any server plugin
+    usage: /<command> <pluginName>

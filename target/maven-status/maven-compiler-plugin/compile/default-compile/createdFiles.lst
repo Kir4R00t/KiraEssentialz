@@ -2,6 +2,8 @@ me\kirar00t\kiraessentialz\listeners\PlayerDeathListener.class
 me\kirar00t\kiraessentialz\misc\tpRequest.class
 me\kirar00t\kiraessentialz\commands\Home.class
 me\kirar00t\kiraessentialz\locations\deathLocations.class
+me\kirar00t\kiraessentialz\commands\disablePlugin.class
+me\kirar00t\kiraessentialz\commands\enablePlugin.class
 me\kirar00t\kiraessentialz\commands\Echest.class
 me\kirar00t\kiraessentialz\commands\Lastdeath.class
 me\kirar00t\kiraessentialz\listeners\ChatHoverLabel.class
