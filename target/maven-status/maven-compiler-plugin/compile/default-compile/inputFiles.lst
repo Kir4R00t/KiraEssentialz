@@ -1,9 +1,12 @@
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\Lastdeath.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\menus\open_opMenu.java
+C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\misc\sendAnnouncement.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\OpMenu.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\locations\homeLocations.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\KiraEssentialz.java
+C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\enablePlugin.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\Home.java
+C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\disablePlugin.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\Sethome.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\Echest.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\TPA.java
@@ -14,4 +17,5 @@ C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraes
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\locations\deathLocations.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\TPAccept.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\Show.java
+C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\announce.java
 C:\Users\miki4\Desktop\CODE\JAVA\KiraEssentialz\src\main\java\me\kirar00t\kiraessentialz\commands\ClearHome.java

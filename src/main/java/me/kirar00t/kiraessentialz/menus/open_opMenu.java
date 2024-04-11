@@ -37,8 +37,14 @@ public class open_opMenu {
         // "frame" item
         ItemStack frame = createOption(Material.BLACK_STAINED_GLASS_PANE, "", "");
 
-        ItemStack option1 = createOption(Material.GOLDEN_APPLE, ChatColor.BLUE + "Option 1", ChatColor.DARK_PURPLE + "This is the first option.");
-        ItemStack option2 = createOption(Material.GOLDEN_APPLE, ChatColor.BLUE + "Option 2", ChatColor.DARK_PURPLE + "This is the second option.");
+        // Add chaos mode switch only if KiraChaos plugin is loaded
+        if (Bukkit.getPluginManager().isPluginEnabled("KiraChaos")) {
+            ItemStack chaosSwitch = createOption(Material.END_CRYSTAL, ChatColor.BLUE + "Chaos mode", ChatColor.DARK_PURPLE + "Enable/Disable Chaos mode");
+            inv.setItem(42, chaosSwitch);
+        }
+
+        ItemStack option1 = createOption(Material.GOLDEN_APPLE, ChatColor.BLUE + "Option 2", ChatColor.DARK_PURPLE + "This is the second option.");
+
 
         ItemStack exit = createOption(Material.BARRIER, ChatColor.RED + "Exit", ChatColor.RED + "Quit operator panel");
 
@@ -51,8 +57,7 @@ public class open_opMenu {
         for (int i = 8; i <= 53; i+=9) { inv.setItem(i, frame); }
 
         // Here are all the options in the panel
-        inv.setItem(21, option1);
-        inv.setItem(23, option2);
+        inv.setItem(10, option1);
         inv.setItem(43, exit);
 
         player.openInventory(inv);

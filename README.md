@@ -12,3 +12,4 @@
 - **/opmenu** --> special menu for server operators
 - **/disablePlugin** --> disable any other loaded plugin
 - **/enablePlugin** --> enable any other loaded plugin
+- **/announce** --> send a server wide announcement

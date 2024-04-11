@@ -39,3 +39,6 @@ commands:
   EnablePlugin:
     description: Enable any server plugin
     usage: /<command> <pluginName>
+  Announce:
+    description: Send a server wide announcement
+    usage: /<command> <message>
