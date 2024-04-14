@@ -15,7 +15,7 @@ public class announce implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = (Player) sender;
 
-        // empty title for now
+        // make an empty title
         String title = "";
 
         if (!player.isOp()) {
