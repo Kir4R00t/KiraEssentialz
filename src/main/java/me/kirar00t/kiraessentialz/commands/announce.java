@@ -20,7 +20,6 @@ public class announce implements CommandExecutor {
 
         if (!player.isOp()) {
             player.sendMessage(ChatColor.RED + "You do not have permission to perform this command !");
-            return true;
         } else {
             StringBuilder messageBuilder = new StringBuilder();
             for (String arg : args) {
@@ -29,7 +28,7 @@ public class announce implements CommandExecutor {
             String message = messageBuilder.toString().trim();
             sendAnnouncement.send(title, message, 10, 20, 10);
 
-            return true;
         }
+        return true;
     }
 }

@@ -44,7 +44,7 @@ public final class Show implements CommandExecutor {
                 item_name = material.toString();
                 System.out.println("item name is - " + item_name);
             }
-            ChatHoverLabel.sendHoverMessage(player, item_name, enchats);
+            ChatHoverLabel.sendHoverMessage(item_name, enchats);
             return true;
 
         } else {

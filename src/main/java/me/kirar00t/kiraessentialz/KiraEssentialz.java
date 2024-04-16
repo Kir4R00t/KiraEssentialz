@@ -2,12 +2,12 @@ package me.kirar00t.kiraessentialz;
 
 // Inside imports
 import me.kirar00t.kiraessentialz.commands.*;
-
-// bukkit imports
 import me.kirar00t.kiraessentialz.listeners.ChatHoverLabel;
 import me.kirar00t.kiraessentialz.listeners.InvOpenListener;
 import me.kirar00t.kiraessentialz.listeners.PlayerDeathListener;
 import me.kirar00t.kiraessentialz.listeners.playerJoinMsg;
+
+// bukkit imports
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
