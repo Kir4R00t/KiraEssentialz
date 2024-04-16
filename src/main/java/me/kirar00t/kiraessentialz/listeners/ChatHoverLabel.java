@@ -6,7 +6,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.ChatColor;
 
 // label imports
-
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;

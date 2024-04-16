@@ -2,10 +2,7 @@ package me.kirar00t.kiraessentialz;
 
 // Inside imports
 import me.kirar00t.kiraessentialz.commands.*;
-import me.kirar00t.kiraessentialz.listeners.ChatHoverLabel;
-import me.kirar00t.kiraessentialz.listeners.InvOpenListener;
-import me.kirar00t.kiraessentialz.listeners.PlayerDeathListener;
-import me.kirar00t.kiraessentialz.listeners.playerJoinMsg;
+import me.kirar00t.kiraessentialz.listeners.*;
 
 // bukkit imports
 import org.bukkit.event.Listener;
@@ -31,12 +28,16 @@ public final class KiraEssentialz extends JavaPlugin implements Listener {
             Objects.requireNonNull(getCommand("enablePlugin")).setExecutor(new enablePlugin());
             Objects.requireNonNull(getCommand("disablePlugin")).setExecutor(new disablePlugin());
             Objects.requireNonNull(getCommand("announce")).setExecutor(new announce());
+            Objects.requireNonNull(getCommand("giveAdminStick")).setExecutor(new giveAdminStick());
+
 
             // Register listeners
             getServer().getPluginManager().registerEvents(new ChatHoverLabel(), this);
             getServer().getPluginManager().registerEvents(new PlayerDeathListener(), this);
             getServer().getPluginManager().registerEvents(new InvOpenListener(), this);
             getServer().getPluginManager().registerEvents(new playerJoinMsg(), this);
+            getServer().getPluginManager().registerEvents(new AdminStickStrike(), this);
+
 
             System.out.println("KiraEssentialz plugin successfully loaded !");
         } catch (Exception e) {

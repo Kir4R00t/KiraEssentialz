@@ -42,3 +42,6 @@ commands:
   Announce:
     description: Send a server wide announcement
     usage: /<command> <message>
+  GiveAdminStick:
+    description: Get access to funny admin sticc
+    usage: /<command> <message>
