@@ -13,3 +13,4 @@
 - **/disablePlugin** --> disable any other loaded plugin
 - **/enablePlugin** --> enable any other loaded plugin
 - **/announce** --> send a server wide announcement
+- **/giveadminstick** --> gives you access to a powerful stick that allows you to cast thunderbolts

@@ -12,13 +12,13 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class AdminStickStrike implements Listener {
-    // TODO: DEBUG THIS
     @EventHandler
     public void onWandStrike(PlayerInteractEvent event) {
         Player player = event.getPlayer();
         ItemStack item = event.getItem();
 
-        if (event.getAction().name().contains("LEFT_CLICK") && isCustomStick(item)) {
+        // TODO: This ain't workin right
+        if (event.getAction().name().contains("LEFT_CLICK") && isAdminStick(item)) {
             Block block = player.getTargetBlock(null, 100);
 
             int x = block.getX();
@@ -32,13 +32,12 @@ public class AdminStickStrike implements Listener {
         }
     }
 
-    // Method to check if it's a real admin wand or just a normal sticc
-    // This may not be the best way to make it "secure"
-    private boolean isCustomStick(ItemStack item) {
+    // Method to check if the item is an admin stick
+    private boolean isAdminStick(ItemStack item) {
         if (item == null || item.getType() != Material.STICK || !item.hasItemMeta()) {
             return false;
         }
         ItemMeta meta = item.getItemMeta();
-        return meta.hasDisplayName() && meta.getDisplayName().equals(ChatColor.RESET + "Admin Sticc");
+        return meta.hasDisplayName() && meta.getDisplayName().equals("Admin sticc");
     }
 }
